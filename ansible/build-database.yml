@@ -1,6 +1,6 @@
 ---
 - name: Build database
-  hosts: database
+  hosts: dbservers
   become: true
   become_method: sudo
   roles:
