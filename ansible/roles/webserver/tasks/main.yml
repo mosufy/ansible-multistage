@@ -3,7 +3,7 @@
 - include: php-extensions.yml
 - include: composer.yml
 - include: npm.yml
-#- include: memcached.yml
+- include: memcached.yml
 - include: redis.yml
 - include: nginx.yml
 - include: sendmail.yml
