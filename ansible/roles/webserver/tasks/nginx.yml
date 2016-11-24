@@ -20,7 +20,7 @@
     path: /etc/nginx/ssl
     state: directory
     owner: nginx
-    group: ginx
+    group: nginx
     mode: 700
 
 - name: Enable nginx and php-fpm services
