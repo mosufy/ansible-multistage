@@ -3,4 +3,5 @@
 
 - include: build-webserver.yml
 - include: build-database.yml
+- include: build-vagrant.yml
 #- include: deploy.yml

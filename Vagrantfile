@@ -11,7 +11,7 @@ Vagrant.configure(2) do |config|
 
   config.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'"
 
-  config.vm.synced_folder "./", "/var/www/vagrant-ansible", :nfs => { :mount_options => ["dmode=777","fmode=777"] }
+  config.vm.synced_folder "./", "/var/www/ansible-multistage", :nfs => { :mount_options => ["dmode=777","fmode=777"] }
 
   config.vm.provider "virtualbox" do |vb|
     vb.customize ["modifyvm", :id, "--memory", "2048"]
