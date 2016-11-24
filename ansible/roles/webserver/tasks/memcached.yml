@@ -1,0 +1,18 @@
+---
+- name: Install PHP Memcached extension
+  yum:
+    name: "{{ item }}"
+    state: present
+  with_items:
+  - php70w-pecl-memcache
+  - php70w-pecl-memcached
+
+- name: Install Memcached
+  yum:
+    name: memcached
+    state: present
+
+- name: Enable Memcached service
+  service:
+    name: memcached
+    enabled: yes

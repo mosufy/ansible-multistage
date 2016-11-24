@@ -1,0 +1,7 @@
+---
+- name: Build database
+  hosts: database
+  become: true
+  become_method: sudo
+  roles:
+  - database

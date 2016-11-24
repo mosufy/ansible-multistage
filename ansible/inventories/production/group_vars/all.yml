@@ -1,0 +1,4 @@
+---
+app_env: production
+
+mysql_root_password: "mosufy"

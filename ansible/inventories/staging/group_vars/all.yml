@@ -1,0 +1,5 @@
+---
+app_env: staging
+
+mysql_root_password: "mosufy"
+mysql_slow_query_log: 1

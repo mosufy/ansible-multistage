@@ -1,0 +1,9 @@
+---
+- name: Deploying /etc/nginx/nginx.conf
+  template: src=etc+nginx+nginx.conf.j2 dest=/etc/nginx/nginx.conf
+
+- name: Deploying /etc/nginx/conf.d/default.conf
+  template: src=etc+nginx+conf.d+default.conf.j2 dest=/etc/nginx/conf.d/default.conf
+
+- name: Deploying /etc/php-fpm.d/www.conf
+  template: src=etc+php-fpm.d+www.conf.j2 dest=/etc/php-fpm.d/www.conf
